@@ -1,0 +1,25 @@
+/** @format */
+
+.banner {
+  background-image: url("img/1.webp");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.banner-logo {
+  display: flex;
+  gap: 1rem;
+}
+.banner-nav-items {
+  display: flex;
+  gap: 2rem;
+}
