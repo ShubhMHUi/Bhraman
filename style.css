@@ -1,25 +1,40 @@
 /** @format */
 
-.banner {
-  background-image: url("img/1.webp");
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.header {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(7, min-content);
+
+  img {
+    grid-column: 1/-1;
+    grid-row: 1/ 1;
+    height: 100vh;
+  }
 }
 
-.banner-nav {
-  display: flex;
+.navbar {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
   justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
+  padding: 1.6rem;
 }
 
-.banner-logo {
-  display: flex;
-  gap: 1rem;
+.navbar_brand {
+  display: grid;
+  justify-content: flex-start;
+  grid-row: 1/1;
+  gap: 0.5rem;
+  .navbar_brand-logo {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+  .navbar_brand-name {
+    grid-row: 1/1;
+  }
 }
-.banner-nav-items {
-  display: flex;
-  gap: 2rem;
+
+.navbar-links {
+  grid-row: 2/1;
+  justify-self: end;
 }
