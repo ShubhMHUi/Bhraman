@@ -11,8 +11,9 @@
   </head>
   <body>
     <main>
+      <!-- Header Section    ---------------------------------------------------->
       <header class="header">
-        <img class="header_bg" src="img/2.webp" alt="img" />
+        <!-- <img class="header_bg" src="img/1.webp" alt="img" /> -->
         <nav class="navbar">
           <ul class="navbar_brand">
             <li class="navbar_brand-logo">
@@ -21,6 +22,7 @@
             <li class="navbar_brand-name">Bharaman</li>
           </ul>
           <div class="navbar-links">
+            <a href="#">TOUR PACKAGE</a>
             <a href="#">ACTIVITES</a>
             <a href="#">TESTIMONIAL</a>
             <a href="#">DESTINATIONS</a>
@@ -28,21 +30,280 @@
         </nav>
 
         <section class="header-content">
-          <h2 class="header-content-title">
+          <h1 class="header-content-title">
             Explore The Incredible <span> Bharat</span>
-          </h2>
+          </h1>
           <input
             type="search"
             name="search"
             placeholder="Search for the destination, things to do and more...."
             id="search"
           />
-          <div class="header-content-link">
-            <i></i>
-            <p>Plan your Journey</p>
-          </div>
+
+          <button class="btn btn-text">
+            <object data="icon/arrow-right-circle.svg"></object>
+            Plan your Journey
+          </button>
         </section>
       </header>
+      <!-- Tour Package Section  -------------------------------------------------->
+      <section class="tours">
+        <div class="tours_heading">
+          <h2>Adventures Awaits: Embrace the Journey</h2>
+        </div>
+        <div class="tours_cards">
+          <div class="tours_card">
+            <figure class="tours_card-img">
+              <img loading="lazy" src="img/2.webp" alt="" />
+            </figure>
+            <h3 class="tours_card-title">Spiritual Tours</h3>
+          </div>
+          <div class="tours_card">
+            <figure class="tours_card-img">
+              <img loading="lazy" src="img/3.webp" alt="" />
+            </figure>
+            <h3 class="tours_card-title">Wild Safari</h3>
+          </div>
+          <div class="tours_card">
+            <figure class="tours_card-img">
+              <img loading="lazy" src="img/4.webp" alt="" />
+            </figure>
+            <h3 class="tours_card-title">Royal Palaces</h3>
+          </div>
+        </div>
+        <div class="carousel-circles">
+          <span></span><span></span><span></span>
+        </div>
+      </section>
+      <!-- Activites Section    ---------------------------------------------------->
+      <section class="activites">
+        <h2>Activities We Offer</h2>
+        <div class="activites_option">
+          <figure class="activites_option-img">
+            <img src="img/5.webp" alt="activites image" />
+          </figure>
+          <ul class="activites_option-list">
+            <li class="activites_option-list_item">
+              <object data="icon/material-symbols_hiking.svg" type=""></object>
+              <p>Walking and Hiking</p>
+              <button class="btn btn-text">
+                <object data="icon/arrow-right-circle.svg" type=""></object>
+              </button>
+            </li>
+            <li class="activites_option-list_item">
+              <object data="icon/bx_cycling.svg" type=""></object>
+              <p>Cycling</p>
+              <button class="btn btn-text">
+                <object data="icon/arrow-right-circle.svg" type=""></object>
+              </button>
+            </li>
+            <li class="activites_option-list_item">
+              <object data="icon/tabler_trekking.svg" type=""></object>
+              <p>Trekking</p>
+              <button class="btn btn-text">
+                <object data="icon/arrow-right-circle.svg" type=""></object>
+              </button>
+            </li>
+            <li class="activites_option-list_item">
+              <object data="icon/map_rafting.svg" type=""></object>
+              <p>Rafting</p>
+              <button class="btn btn-text">
+                <object data="icon/arrow-right-circle.svg" type=""></object>
+              </button>
+            </li>
+            <li class="activites_option-list_item">
+              <object
+                data="icon/healthicons_exercise-yoga.svg"
+                type=""
+              ></object>
+
+              <p>Yoga</p>
+              <button class="btn btn-text">
+                <object data="icon/arrow-right-circle.svg" type=""></object>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Quote Section        ---------------------------------------------------->
+      <section class="quote">
+        <div class="quote_content">
+          <h4 class="quote_content-text">
+            “It is better to travel well than to arrive.”
+          </h4>
+          <h4 class="quote_content-author">~ Bhagwan Buddha</h4>
+        </div>
+      </section>
+      <!-- FeedBack Section        -------------------------------------------------->
+      <section class="feedback">
+        <div class="feedback_content">
+          <h2 class="feedback_content-title">What Our Client Says</h2>
+          <figure class="feedback_content-user_img">
+            <img src="img/7.webp" alt="User image" loading="lazy" />
+          </figure>
+
+          <p class="feedback_content-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            quaerat saepe, qui obcaecati laudantium incidunt dolore perferendis
+            sint, deserunt earum at.
+          </p>
+          <p class="feedback_content-username">Sara</p>
+          <div class="feedback_content-nav">
+            <object data="icon/arrow-left-circle.svg" type=""></object
+            ><object data="icon/arrow-right-circle.svg" type=""></object>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery Section        -------------------------------------------------->
+      <section class="gallery">
+        <div class="gallery_content">
+          <h2 class="gallery_content-title">Incredible Destinations</h2>
+          <p class="gallery_content-text">
+            Welcome to the world of wonder with Bhraman
+          </p>
+        </div>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/1.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/2.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/3.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/4.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/5.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/6.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/7.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/8.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/9.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/10.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/11.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/12.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/13.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/14.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/15.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/16.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/17.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/18.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/19.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery_img">
+          <img
+            src="img/gallery/20.webp"
+            alt="destination images"
+            loading="lazy"
+          />
+        </figure>
+      </section>
     </main>
   </body>
 </html>

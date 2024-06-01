@@ -8,18 +8,23 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-display: swap;
+  font-family: Rubik;
+  font-style: normal;
+  src: local(Work Sans), url("./fonts/Rubik.woff2") format(woff2);
+}
+
 html {
   font-size: 10px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Rubik, sans-serif;
   line-height: 1.5;
-  color: #fff;
 }
 
-a,
-input[type="submit"] {
+a {
   text-decoration: none;
   color: #333;
   border-radius: 0.5rem;
@@ -98,4 +103,25 @@ img {
 ::placeholder {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--darkBlueColor);
+  object {
+    fill: var(--darkBlueColor);
+  }
+  &.btn-text {
+    background-color: transparent;
+  }
 }

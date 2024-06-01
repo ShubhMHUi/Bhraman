@@ -81,3 +81,336 @@
     font-size: 4rem;
   }
 }
+/** @format */
+
+:root {
+  /* Colors */
+  --darkBlueColor: #154e85;
+  --darkBlueColor-600: #2768a7;
+  --lightBlueColor: #3d84c9;
+  --lightBlueColor-400: #59a3eb;
+  --lightBlueColor-200: #73baff;
+  --white: #fff;
+  --black: #000;
+}
+
+/* ------------------header--------------------  */
+.header {
+  background-image: url(img/1.webp);
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.navbar {
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, min-content);
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.navbar_brand {
+  grid-row: 1/1;
+
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+
+  .navbar_brand-logo {
+    height: 64px;
+    grid-column: 1/1;
+    grid-row: 1/1;
+
+    align-self: center;
+    img {
+      height: 64px;
+      object-fit: cover;
+    }
+  }
+  .navbar_brand-name {
+    grid-row: 1/1;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--darkBlueColor-600);
+  }
+}
+
+.navbar-links {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  justify-self: end;
+  font-weight: 600;
+  a {
+    color: var(--darkBlueColor-600);
+  }
+}
+
+.header-content {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 2rem;
+  input {
+    padding: 1.5rem;
+    width: 40%;
+    border-radius: 50px;
+    background-color: #ffffffb0;
+  }
+  .header-content-title {
+    font-size: 4rem;
+    color: var(--darkBlueColor);
+    span {
+      color: var(--darkBlueColor-600);
+    }
+  }
+}
+
+/*tours section----------------------------------- */
+.tours {
+  display: grid;
+  padding: 6rem 2rem;
+  gap: 4rem;
+  justify-items: center;
+}
+.tours_heading {
+  color: var(--darkBlueColor);
+}
+.tours_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.tours_card {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  transition: transform 0.5s ease-in;
+  transform: translate(0, 0);
+  border-radius: 12px;
+  /* &:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 0px 0px 10px red;
+  } */
+}
+.tours_card-img {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+
+  width: 32rem;
+  height: 40rem;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    background-image: linear-gradient(
+      210deg,
+      rgba(0, 0, 0, 0),
+      rgba(89, 163, 235, 0.6)
+    );
+    z-index: 1;
+  }
+  img {
+    border-radius: 12px;
+    object-fit: cover;
+  }
+}
+
+.tours_card-title {
+  grid-column: 1/-1;
+  grid-row: 2/2;
+  justify-self: center;
+  align-self: end;
+  z-index: 1;
+
+  color: var(--white);
+  padding: 16px;
+}
+
+.carousel-circles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+
+  gap: 0.8rem;
+  span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--lightBlueColor-200);
+    &:nth-child(2) {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: var(--lightBlueColor);
+    }
+  }
+}
+
+/* Activites section------------------------------------------ */
+
+.activites {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 6.4rem;
+
+  padding: 6rem 2rem;
+}
+
+.activites_option {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.activites_option-img {
+  grid-row: 1/1;
+  grid-column: 1/2;
+  img {
+    border-radius: 12px;
+  }
+}
+
+.activites_option-list {
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+  border: 2px solid var(--darkBlueColor);
+  border-radius: 12px;
+}
+.activites_option-list_item {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.6rem 4rem;
+  gap: 1rem;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid var(--darkBlueColor-600);
+  }
+  p {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--darkBlueColor);
+  }
+  button {
+    justify-self: end;
+  }
+}
+
+/*  */
+
+.quote {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px;
+  place-items: center;
+
+  padding: 4rem;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(115, 185, 255, 0.25)
+    ),
+    url("img/6.webp");
+  background-size: cover;
+}
+
+.quote_content {
+  padding: 8rem 18rem;
+  background-color: var(--white);
+  opacity: 0.5;
+  border-radius: 12px;
+}
+.quote_content-text {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--darkBlueColor);
+}
+.quote_content-author {
+  padding-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--darkBlueColor);
+  border-bottom: 1px solid var(--darkBlueColor);
+}
+
+/* Feedback Section-------------------------------------- */
+.feedback {
+  display: grid;
+  padding: 4rem;
+  place-items: center;
+}
+
+.feedback_content {
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+  grid-template-columns: repeat(3, auto);
+  gap: 3rem;
+  place-items: center;
+}
+.feedback_content-title {
+  grid-row: 1/1;
+  grid-column: 2/3;
+}
+
+.feedback_content-user_img {
+  grid-row: 2/2;
+  grid-column: 2/3;
+  img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.feedback_content-text {
+  grid-row: 3/3;
+  grid-column: 2/3;
+
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: var(--darkBlueColor);
+  padding: 0 14rem;
+}
+
+.feedback_content-username {
+  grid-row: 4/4;
+  grid-column: 2/3;
+
+  font-size: 3.6rem;
+  color: var(--darkBlueColor-600);
+}
+
+.feedback_content-nav {
+  grid-row: 5/5;
+  grid-column: 2/3;
+
+  object {
+    padding: 0 0.5rem;
+  }
+}
