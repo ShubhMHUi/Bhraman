@@ -1,5 +1,16 @@
 /** @format */
 
+:root {
+  /* Colors */
+  --darkBlueColor: #154e85;
+  --darkBlueColor-600: #2768a7;
+  --lightBlueColor: #3d84c9;
+  --lightBlueColor-400: #59a3eb;
+  --lightBlueColor-200: #73baff;
+  --white: #fff;
+  --black: #000;
+}
+
 .header {
   display: grid;
   /* grid-template-columns: repeat(10, 1fr);
@@ -35,13 +46,13 @@
   gap: 0.5rem;
 
   .navbar_brand-logo {
-    height: 54px;
+    height: 100%;
+
     grid-column: 1/1;
     grid-row: 1/1;
 
     align-self: center;
     img {
-      height: 64px;
       object-fit: cover;
     }
   }
@@ -81,18 +92,6 @@
     font-size: 4rem;
   }
 }
-/** @format */
-
-:root {
-  /* Colors */
-  --darkBlueColor: #154e85;
-  --darkBlueColor-600: #2768a7;
-  --lightBlueColor: #3d84c9;
-  --lightBlueColor-400: #59a3eb;
-  --lightBlueColor-200: #73baff;
-  --white: #fff;
-  --black: #000;
-}
 
 /* ------------------header--------------------  */
 .header {
@@ -127,13 +126,11 @@
   gap: 0.5rem;
 
   .navbar_brand-logo {
-    height: 64px;
     grid-column: 1/1;
     grid-row: 1/1;
 
     align-self: center;
     img {
-      height: 64px;
       object-fit: cover;
     }
   }
@@ -269,7 +266,7 @@
 .activites {
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  gap: 6.4rem;
+  justify-items: center;
 
   padding: 6rem 2rem;
 }
@@ -279,6 +276,7 @@
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+  padding: 4rem;
 }
 
 .activites_option-img {
@@ -396,6 +394,36 @@
   font-size: 2.4rem;
   color: var(--darkBlueColor);
   padding: 0 14rem;
+
+  position: relative;
+  &::before {
+    content: url(icon/mdi_comma-li.svg);
+    position: absolute;
+    top: -64px;
+    left: 32px;
+  }
+  &::after {
+    content: url(icon/mdi_comma-li.svg);
+    position: absolute;
+    top: 8px;
+    right: 32px;
+    transform: rotate(180deg);
+  }
+  .quote_icon-before {
+    content: url(icon/mdi_comma.svg);
+    position: absolute;
+    top: -40px;
+    left: 80px;
+    opacity: 0.6;
+  }
+  .quote_icon-after {
+    content: url(icon/mdi_comma.svg);
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    transform: rotate(180deg);
+    opacity: 0.6;
+  }
 }
 
 .feedback_content-username {
@@ -412,5 +440,33 @@
 
   object {
     padding: 0 0.5rem;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+
+  padding: 4rem;
+  background-color: var(--lightBlueColor-200);
+}
+
+.gallery_content {
+  grid-row: 1/-1;
+  display: grid;
+  justify-items: center;
+}
+.gallery_content-title {
+  color: var(--darkBlueColor);
+}
+.gallery_content-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 2rem;
+  padding: 4rem;
+  img {
+    object-fit: cover;
+    border-radius: 1rem;
   }
 }
