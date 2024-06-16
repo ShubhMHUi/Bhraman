@@ -10,15 +10,15 @@
     <title>Bhraman</title>
   </head>
   <body>
-    <main>
+    <main class="container">
       <!-- Header Section    ---------------------------------------------------->
-      <header class="header">
+      <header class="header overall-layout padd">
         <!-- <img class="header_bg" src="img/1.webp" alt="img" /> -->
         <nav class="navbar">
           <ul class="navbar_brand">
-            <li class="navbar_brand-logo">
+            <!-- <li class="navbar_brand-logo">
               <img src="img/logo.png" alt="banner-logo" />
-            </li>
+            </li> -->
             <li class="navbar_brand-name">Bharaman</li>
           </ul>
           <div class="navbar-links">
@@ -47,7 +47,7 @@
         </section>
       </header>
       <!-- Tour Package Section  -------------------------------------------------->
-      <section class="tours">
+      <section class="tours overall-layout padd">
         <div class="tours_heading">
           <h2>Adventures Awaits: Embrace the Journey</h2>
         </div>
@@ -76,11 +76,11 @@
         </div>
       </section>
       <!-- Activites Section    ---------------------------------------------------->
-      <section class="activites">
+      <section class="activites overall-layout padd">
         <h2>Activities We Offer</h2>
         <div class="activites_option">
           <figure class="activites_option-img">
-            <img src="img/5.webp" alt="activites image" />
+            <img loading="lazy" src="img/5.webp" alt="activites image" />
           </figure>
           <ul class="activites_option-list">
             <li class="activites_option-list_item">
@@ -127,7 +127,7 @@
       </section>
 
       <!-- Quote Section        ---------------------------------------------------->
-      <section class="quote">
+      <section class="quote overall-layout padd">
         <div class="quote_content">
           <h4 class="quote_content-text">
             “It is better to travel well than to arrive.”
@@ -136,7 +136,7 @@
         </div>
       </section>
       <!-- FeedBack Section        -------------------------------------------------->
-      <section class="feedback">
+      <section class="feedback overall-layout padd">
         <div class="feedback_content">
           <h2 class="feedback_content-title">What Our Client Says</h2>
           <figure class="feedback_content-user_img">
@@ -158,7 +158,7 @@
         </div>
       </section>
       <!-- Gallery Section        -------------------------------------------------->
-      <section class="gallery">
+      <section class="gallery overall-layout padd">
         <div class="gallery_content">
           <h2 class="gallery_content-title">Incredible Destinations</h2>
           <p class="gallery_content-text">
@@ -172,6 +172,9 @@
               alt="destination images"
               loading="lazy"
             />
+            <caption>
+              Keadarnath temple
+            </caption>
           </figure>
           <figure class="gallery_img">
             <img
@@ -309,11 +312,18 @@
         </div>
       </section>
       <!-- Footer Section         -------------------------------------------------->
-      <footer class="footer">
+      <footer class="footer overall-layout padd">
         <div class="footer_img">
-          <figure><img src="" alt="" /></figure>
+          <figure><img src="img/1.webp" alt="" /></figure>
         </div>
-        <div class="footer_content"></div>
+        <div class="footer_content">
+          <h4 class="footer_content-title">Sign up for Newsletter</h4>
+          <p>Sign up now to receive special offers and best tours</p>
+          <fieldset class="footer_content-form">
+            <input type="text" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </fieldset>
+        </div>
       </footer>
     </main>
   </body>
